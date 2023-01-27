@@ -1,4 +1,5 @@
 {
+  "name": "svelte-turbo-histoire",
   "private": true,
   "scripts": {
     "build": "turbo run build",
