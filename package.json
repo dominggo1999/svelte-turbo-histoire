@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write .",
+    "prepare": "node -e \"try { require('husky').install() } catch (e) {if (e.code !== 'MODULE_NOT_FOUND') throw e}\"",
+    "pre-commit": "turbo lint && turbo build"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-custom": "workspace:*",
+    "husky": "^8.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@7.15.0"
+}

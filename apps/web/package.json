@@ -1,0 +1,33 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite dev --port 3000",
+    "build": "vite build",
+    "package": "vite package",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --write --ignore-path=../../.prettierignore . && TIMING=1 eslint \"src\"",
+    "format": "prettier --write --ignore-path=../../.prettierignore ."
+  },
+  "dependencies": {
+    "@acme/tailwind-config": "*",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "latest",
+    "@sveltejs/kit": "latest",
+    "autoprefixer": "^10.4.13",
+    "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.19",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.7.1",
+    "svelte-preprocess": "^4.10.6",
+    "tailwindcss": "^3.2.4",
+    "tslib": "^2.3.1",
+    "typescript": "^4.7.2",
+    "vite": "^4.0.0"
+  },
+  "type": "module"
+}
