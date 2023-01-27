@@ -1,0 +1,16 @@
+{
+  "name": "@acme/type-utils",
+  "version": "0.1.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-custom": "*",
+    "typescript": "^4.9.4"
+  }
+}
